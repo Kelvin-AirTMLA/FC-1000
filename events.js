@@ -34,6 +34,7 @@ Still thrilled to have you in the community! 🙌🏽
 
 Since FicCrunch was built to save programmers from drowning in messy GitHub issues and terrifying nested threads, let's turn it into a competition. 
 
+
 ### 🎯 Your Mission:
 Find the absolute most chaotic, over-engineered, or deeply nested public GitHub issue thread or PR on the internet. 
 
