@@ -47,30 +47,36 @@ Find the absolute most chaotic, over-engineered, or deeply nested public GitHub 
 The member who submits the graph with the most insane "spaghetti monster" layout wins a permanent, custom Discord role: **👑 Master Graph Hunter**.
 `);
 
-await message.edit(`
-    Hey ${member}! Welcome to the FicCrunch Discord! Are you currently working on an open-source project, or just checking out developer tools? Great to have you here!
-    
-    If you have a spare second, grab a public GitHub issue you've been trying to parse and paste it into the app (https://www.ficcrunch.com/). Let me know what you think of how the app helps you!
-    
-    You can also head to the feedback page of the website and send a form to us. Also, we have 13 seats left in the LifeTime Pro group. If you'd like to join, you can go ahead.
-    
-    Still thrilled to have you in the community! 🙌🏽
-    ## 🐙 ANNOUNCING: The Nightmare Repo Hunt! 
-    
-    Since FicCrunch was built to save programmers from drowning in messy GitHub issues and terrifying nested threads, let's turn it into a competition. 
-    
-    
-    ### 🎯 Your Mission:
-    Find the absolute most chaotic, over-engineered, or deeply nested public GitHub issue thread or PR on the internet. 
-    
-    ### 🛠️ How to Play:
-    1. Hunt down a notoriously messy public GitHub issue link (think massive frameworks, legacy tools, or complex bugs).
-    2. Paste that link into https://ficcrunch.com
-    3. Take a screenshot of the resulting visual graph and drop it right here in this channel!
-    
-    ### 🏆 The Prize:
-    The member who submits the graph with the most insane "spaghetti monster" layout wins a permanent, custom Discord role: **👑 Master Graph Hunter**.
-    `);
+        setTimeout(async () => {
+            try {
+                await message.edit(`
+            Hey ${member}! Welcome to the FicCrunch Discord! Are you currently working on an open-source project, or just checking out developer tools? Great to have you here!
+            
+            If you have a spare second, grab a public GitHub issue you've been trying to parse and paste it into the app (https://www.ficcrunch.com/). Let me know what you think of how the app helps you!
+            
+            You can also head to the feedback page of the website and send a form to us. Also, we have 13 seats left in the LifeTime Pro group. If you'd like to join, you can go ahead.
+            
+            Still thrilled to have you in the community! 🙌🏽
+            ## 🐙 ANNOUNCING: The Nightmare Repo Hunt! 
+            
+            Since FicCrunch was built to save programmers from drowning in messy GitHub issues and terrifying nested threads, let's turn it into a competition. 
+            
+            
+            ### 🎯 Your Mission:
+            Find the absolute most chaotic, over-engineered, or deeply nested public GitHub issue thread or PR on the internet. 
+            
+            ### 🛠️ How to Play:
+            1. Hunt down a notoriously messy public GitHub issue link (think massive frameworks, legacy tools, or complex bugs).
+            2. Paste that link into https://ficcrunch.com
+            3. Take a screenshot of the resulting visual graph and drop it right here in this channel!
+            
+            ### 🏆 The Prize:
+            The member who submits the graph with the most insane "spaghetti monster" layout wins a permanent, custom Discord role: **👑 Master Graph Hunter**.
+            `);
+            } catch (editError) {
+                console.error("Failed to edit message:", editError);
+            }
+        }, 5000)
 
     } catch (error) {
         console.error("Error in guildMemberAdd:", error);
