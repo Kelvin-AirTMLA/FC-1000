@@ -48,7 +48,7 @@ The member who submits the graph with the most insane "spaghetti monster" layout
 `);
 
 await message.edit(`
-    Hey ${member}! Welcome to the FicCrunch Discord! Saw you join from BetaList. Are you currently working on an open-source project, or just checking out developer tools? Great to have you here!
+    Hey ${member}! Welcome to the FicCrunch Discord! Are you currently working on an open-source project, or just checking out developer tools? Great to have you here!
     
     If you have a spare second, grab a public GitHub issue you've been trying to parse and paste it into the app (https://www.ficcrunch.com/). Let me know what you think of how the app helps you!
     
