@@ -72,7 +72,6 @@ await message.edit(`
     The member who submits the graph with the most insane "spaghetti monster" layout wins a permanent, custom Discord role: **👑 Master Graph Hunter**.
     `);
 
-await message.edit()
     } catch (error) {
         console.error("Error in guildMemberAdd:", error);
     }
